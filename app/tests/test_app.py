@@ -64,7 +64,7 @@ class TestApp(BaseSetup):
 
     def test_create_product_without_variants(self):
         payload = self.get_payload()
-        del(payload["variants"])
+        del payload["variants"]
         response = self.test_client.post(
             "/v1/products/create/",
             json=payload
@@ -73,10 +73,9 @@ class TestApp(BaseSetup):
 
     def test_create_product_without_config_attributes(self):
         payload = self.get_payload()
-        del(payload["variants"][0]["config_attributes"])
+        del payload["variants"][0]["config_attributes"]
         response = self.test_client.post(
             "/v1/products/create/",
             json=payload
         )
         self.assertEqual(response.status_code, 200, response.json())
-

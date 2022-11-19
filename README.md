@@ -24,3 +24,7 @@ python3 cli_manage.py get-coverage-report
 - `alembic revision -m ''` supports `--autogenerate`
 - separated database for tests with a proper cleaning
 - `python3 cli_manage.py` for a better UX
+
+
+### Code Coverage report
+![coveage](images/2022-11-19 11.18.32.png)
