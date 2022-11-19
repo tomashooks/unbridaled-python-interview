@@ -27,4 +27,4 @@ python3 cli_manage.py get-coverage-report
 
 
 ### Code Coverage report
-![coveage](images/2022-11-19 11.18.32.png)
+![coverage](images/coverage.png)
